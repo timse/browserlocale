@@ -18,3 +18,14 @@ export default function getLocale() {
 
     return navigator.browserLanguage;
 }
+
+export function territory() {
+    const locale = getLocale();
+    if (!locale) {
+        return undefined;
+    }
+
+    const langAndTerritory = locale.split(/[-_]/);
+    // may be undefined
+    return langAndTerritory[1];
+};
