@@ -1,0 +1,32 @@
+{
+  "name": "browserlocale",
+  "version": "0.0.1",
+  "description": "Retrieve locale from browser - as far as possible",
+  "main": "browserlocale.js",
+  "scripts": {
+    "build": "webpack",
+    "build:production": "webpack -p",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timse/back-to-basic.git"
+  },
+  "keywords": [
+    "browser locale",
+    "locale in browser",
+    "navigator locale",
+    "browser language"
+  ],
+  "author": "Tim Sebastian @timse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timse/browserlocale/issues"
+  },
+  "homepage": "https://github.com/timse/browserlocale#readme",
+  "devDependencies": {
+    "babel-loader": "5.3.3",
+    "babel-core": "5.8.34",
+    "webpack": "^1.12.9"
+  }
+}
